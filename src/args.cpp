@@ -4,10 +4,6 @@
 
 #include "args.h"
 
-#include <format>
-#include <iostream>
-#include <ostream>
-
 std::vector<std::string> parse_flag_chunks(
     std::unordered_map<std::string, int> args,
     const std::string &chunk
@@ -102,14 +98,14 @@ void print_help() {
         "\t-h/help\t\t\t\x1b[36mPrint this help message.\x1b[0m" << std::endl;
 }
 
-void parse_args(const int argc, char **argv) {
+int parse_args(const int argc, char **argv) {
     initialize_args();
     std::vector<std::string> parsed_arguments;
     // we parse chunks as different flags, thus making parsing process easier
     // taking some extra resources, but I don't care really - namnam1105 25.09.25
     if (argc < 2) {
         print_help();
-        return;
+        return 2;
     }
     for (int i=1; i<argc; i++) {
         std::string arg = argv[i];
@@ -143,7 +139,7 @@ void parse_args(const int argc, char **argv) {
                 break;
             case HELP:
                 print_help();
-                return;
+                return 0;
             default:
                 // assuming it's an argument for packages.
                 if (install || rm || query) {
@@ -152,11 +148,13 @@ void parse_args(const int argc, char **argv) {
                 break;
         }
     }
-    std::cout << packages.size() << std::endl;
+    //std::cout << packages.size() << std::endl;
     if ((install && query) || (install && search) || (query && rm) || (rm && search) || (query && upgrade)) {
         std::cerr << "\x1b[1;31mError: \x1b[39;1mbad arguments\n" << std::endl;
         std::cerr << "Prohibited combinations:" << std::endl;
         std::cerr << "\x1b[31minstall + query\ninstall + search\nquery + remove\nremove + search\nquery + upgrade\x1b[0m" << std::endl;
-        std::cerr << "\x1b[1mUse help or -h to find more information";
+        std::cerr << "\x1b[1mUse help or -h for more information\x1b[0m" << std::endl;
+        return 1;
     }
+    return execute_command(packages);
 }

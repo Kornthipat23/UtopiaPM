@@ -8,6 +8,10 @@
 #include <vector>
 #include <unordered_map>
 #include <string>
+#include <format>
+#include <iostream>
+#include <ostream>
+#include "control.h"
 
 std::vector<std::string> parse_flag_chunks(std::unordered_map<std::string, int> args, const std::string &chunk);
 
@@ -29,7 +33,7 @@ inline bool search = false;
 inline bool update = false;
 inline bool upgrade = false;
 
-void parse_args(int argc, char **argv);
+int parse_args(int argc, char **argv);
 
 inline std::unordered_map<std::string, int> args;
 
